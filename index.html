@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- le div principal avec le font coloré -->
+
+  <div class="wrapper">
+    <video autoplay loop muted plays-inline class="back-video">
+      <!-- change the video to your own -->
+      <source src="assets/video.mp4" />
+    </video>
+
+    <h2>
+      To-Do List <img src="img/icon.png" alt="image liste">
+    </h2>
+    <div class="task-input">
+      <input type="text" placeholder="Ajouter une tâche">
+      <button class="add-btn" onclick="add()">Ajouter</button>
+    </div>
+    <div class="controls">
+      <div class="filters">
+        <span class="active" id="all">Tout</span>
+        <span id="pending">En attente</span>
+        <span id="completed">Terminé</span>
+      </div>
+      <button class="clear-btn">Tout effacer</button>
+    </div>
+    <ul class="task-box"></ul>
+    <!-- ajout du message -->
+    <div class="message-container">Élément supprimé</div>
+
+  </div>
+  <!-- Fin de la div principal -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
